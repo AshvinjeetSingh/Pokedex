@@ -1,21 +1,22 @@
 **Pokedex**
 
+**Description**
+
 Pokedex is a react based application that is used to find all the pokemons from generation 1 to generation 8.
+
 Pokedex helps in finding the following things :-
 
 
-**Description**
-
-1)Pokemon stats:-
+1) Pokemon stats:-
   i) HP
   ii) Attack
   iii) Special Attack
   iv) Special Defence
   v)  Speed
  
-2)Types
+2) Types
 
-3)Attributes
+3) Attributes
 
 
 **How to access pokedex**
@@ -24,13 +25,13 @@ Pokedex is currently delpoyed on the following address :- https://pokedexreactv1
 
 **Tech Stack used**
 
-1)React
+1) React
 
-2)Redux
+2) Redux
 
-3)Redux-Thunk
+3) Redux-Thunk
 
-4)React-bootstrap
+4) React-bootstrap
 
 **Folder Structure**
 
@@ -39,12 +40,12 @@ Pokedex is currently delpoyed on the following address :- https://pokedexreactv1
 
 **Current drawbacks**
 
-1)filter is done only on data present on the active page
+1) filter is done only on data present on the active page
 
-2)spirits are only available for pokemon rank<=807
+2) spirits are only available for pokemon rank<=807
 
 **Future Aspects**
 
-1)Filtering Data from all the pages rather than  from the active page
+1) Filtering Data from all the pages rather than  from the active page
 
-2)To include spirits of pokemon having Rank>807
+2) To include spirits of pokemon having Rank>807
