@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux'
-import pokemonDataReducer from '../Reducers'
-import pokemonDataMultipleReducer from '../PokemonReducers'
+import pokemonDataReducer from './Reducers'
+import pokemonDataMultipleReducer from './PokemonReducers'
 
 const rootReducer=combineReducers({
     pokemonData:pokemonDataReducer,

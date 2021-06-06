@@ -1,4 +1,4 @@
-import * as type from '../ActionType'
+import * as type from './ActionType'
 import API from '../../API/Api'
 
 

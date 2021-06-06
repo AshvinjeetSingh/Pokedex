@@ -1,15 +1,17 @@
-import * as type from './ActionType'
+import * as type from '../Actions/ActionType'
 
 const initState={
-    Data:{},
+    Data:[],
     loading:false,
     errorMsg:'',
+    count:0,
+    value:''
 }
 
-export default function pokemonDataMultipleReducer(state=initState,action){
+export default function pokemonDataReducer(state=initState,action){
     switch(action.type){
         
-        case type.GET_ALL_POKEMON_MULTIPLE_LOADING:
+        case type.GET_ALL_POKEMON_LIST_LOADING:
             return{
                 ...state,
                 loading:true,
@@ -17,18 +19,16 @@ export default function pokemonDataMultipleReducer(state=initState,action){
             }
         
         
-        case type.GET_ALL_POKEMON_MULTIPLE_SUCCESS:
+        case type.GET_ALL_POKEMON_LIST_SUCCESS:
             return{
                 ...state,
+                Data:action.payload.results,
                 loading:false,
                 errorMsg:'',
-                Data:{
-                    ...state.data,
-                    [action.pokemonName]:action.payload
-                }
+                count:action.payload.count
             }
 
-            case type.GET_ALL_POKEMON_MULTIPLE_ERROR:
+            case type.GET_ALL_POKEMON_LIST_ERROR:
                 return{
                     ...state,
                     loading:false,

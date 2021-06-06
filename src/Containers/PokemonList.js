@@ -13,29 +13,21 @@ const PokemonList = (props) => {
 
     const dispatch = useDispatch();
     const pokemonList = useSelector(state => state.pokemonData)
-   
-    
-    // const pokeval=pokemonList.Data.results
-    // const [pokedex,setPokedex]=useState(pokeval)
     const onChangeHandler=(e)=>{
         setSearchValues(e.target.value)
         console.log(e.target.value)
     }
 
-
-
     useEffect(() => {
         fetchPokeData(1)
     }, [])
     
-
-
     const propOwn = Object.getOwnPropertyNames(pokemonList.Data);
-    console.log(propOwn.length); // 1
-    // console.log(pokemonList.Data)
+
     const fetchPokeData=(page)=>{
         dispatch(getPokemonList(page))
     }
+    
     const checkDatamethod=()=>{
 
         if(pokemonList.loading){
@@ -65,7 +57,7 @@ const PokemonList = (props) => {
         }
 
         return <p>Unable to fetch data</p>
-    }
+        }
 
     return (
         <div>
@@ -83,7 +75,5 @@ const PokemonList = (props) => {
         </div>
     )
 }
-
-
 
 export default PokemonList

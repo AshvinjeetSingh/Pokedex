@@ -35,11 +35,7 @@ const Pokemon = (props) => {
         dragon:"#7D1387",
         steel:"#B2B2B2",
         fairy:"#FFCDFB",
-
-
-
    }
-
 
     const showData=()=>{
         if (!_.isEmpty(pokemon.Data[pokemonName.trim()])){
