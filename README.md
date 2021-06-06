@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+**Pokedex**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Description**
 
-## Available Scripts
+Pokedex is a react based application that is used to find all the pokemons from generation 1 to generation 8.
 
-In the project directory, you can run:
+Pokedex helps in finding the following things :-
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Pokemon stats:-
+  i) HP
+  ii) Attack
+  iii) Special Attack
+  iv) Special Defence
+  v)  Speed
+ 
+2) Types
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3) Attributes
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**How to access pokedex**
 
-### `npm run build`
+Pokedex is currently delpoyed on the following address :- https://pokedexreactv1.netlify.app/
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Tech Stack used**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1) React
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2) Redux
 
-### `npm run eject`
+3) Redux-Thunk
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4) React-bootstrap
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Folder Structure**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://user-images.githubusercontent.com/51511908/120930511-25f03900-c70b-11eb-9992-1d6659e47c4d.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+**Current drawbacks**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1) filter is done only on data present on the active page
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2) spirits are only available for pokemon rank<=807
 
-### Code Splitting
+**Future Aspects**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1) Filtering Data from all the pages rather than  from the active page
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2) To include spirits of pokemon having Rank>807
