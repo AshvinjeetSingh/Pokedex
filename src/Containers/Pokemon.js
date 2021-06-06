@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react'
-import {connect,useDispatch,useSelector} from 'react-redux'
+import {useDispatch,useSelector} from 'react-redux'
 import {getPokemon} from '../Store/Actions/Actions' 
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -51,19 +51,19 @@ const Pokemon = (props) => {
 
                 <Carousel>
                 <div>
-                    <img src={pokeData.sprites.front_default} />
+                    <img src={pokeData.sprites.front_default} alt="/"/>
                     
                 </div>
                 <div>
-                    <img src={pokeData.sprites.back_default} />
+                    <img src={pokeData.sprites.back_default} alt="/" />
                     
                 </div>
                 <div>
-                    <img src={pokeData.sprites.front_shiny} />
+                    <img src={pokeData.sprites.front_shiny} alt="/" />
                     
                 </div>
                 <div>
-                    <img src={pokeData.sprites.back_shiny} />
+                    <img src={pokeData.sprites.back_shiny} alt="/" />
                    
                 </div>
             </Carousel>
@@ -102,7 +102,7 @@ const Pokemon = (props) => {
             return <p>Loading...</p>
         }
 
-        if(pokemon.errorMsg==''){
+        if(pokemon.errorMsg===''){
             return <p>props.pokemonList.errorMsg</p>
         }
 

@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import {connect,useSelector,useDispatch} from 'react-redux'
+import {useSelector,useDispatch} from 'react-redux'
 import _ from "lodash"
 import { getPokemonList } from '../Store/Actions/Actions'
 import Navbar from './Navbar'
@@ -45,13 +45,14 @@ const PokemonList = (props) => {
         if(!_.isEmpty(pokemonList.Data)){
             
             return pokemonList.Data.filter((val)=>{
-                if(searchValues==""){
+                if(searchValues===""){
                     return val
                 }
 
                 else if(val.name.toLowerCase().includes(searchValues.toLowerCase())){
                     return val
                 }
+                return null
             }).map((data,index)=>(<CardsName key={index} name={data.name} />))
 
             
@@ -59,7 +60,7 @@ const PokemonList = (props) => {
 
         
 
-        if(pokemonList.errorMsg==''){
+        if(pokemonList.errorMsg===''){
             return <p>props.pokemonList.errorMsg</p>
         }
 
