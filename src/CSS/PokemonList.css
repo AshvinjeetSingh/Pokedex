@@ -1,0 +1,22 @@
+    .pagination{
+        max-width: 500px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    margin: 10px auto;
+    background: rgb(255 255 255);
+    padding: 10px 0px;
+    font-weight: 700;
+    }
+
+    .pagination li{
+        padding:0px 10px;
+        
+    }
+
+    .list_div {
+        min-height: calc(100vh - 70px);
+      }
+
+      

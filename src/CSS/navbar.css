@@ -1,0 +1,32 @@
+nav{
+    display: flex!important;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    height:10vh;
+    max-height:70px;
+    background-color: #f791f1!important;
+    padding:0px 20px;
+  }
+
+input{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 0;
+    margin: 0 10px!important;
+}
+
+.logo{
+    max-width: 150px;
+    background-color: transparent;
+}
+
+img{
+    background-color: #ffffff47;
+}
+
+button{
+    background-image: linear-gradient(to right top, #ee32a5, #b771e7, #5f9aff, #00b4f8, #26c4dc);
+    width: 40%;
+    margin:0 10px;
+}
